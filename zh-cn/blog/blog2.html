@@ -48,8 +48,8 @@
 <li>当主线程任务完成后，会处理I/O观察者事件，取出之前封装在请求对象中的回调函数，执行该回调函数。在本段代码中是将查询结果处理成一个 JSON 返回给客户端。
 以上就是nodejs的事件驱动和非阻塞I/O的大致流程。</li>
 </ol>
-<p>三、结语
-通过以上，我们就可以知道，nodejs的处理方式大多都是将I/O处理放到其他线程中进行处理的，所以效率自然高，但是对于例如模板渲染，压缩，解压缩，加密，解密等CPU密集型计算的就得主线程去做了，这些都是需要串行执行的。如果需要提高效率，只能使得每个任务高效地完成，那么我们可以利用C++ Addon去处理CPU密集型，提高效率。</p>
+<p>三、结语</p>
+<p>通过以上，我们就可以知道，nodejs的处理方式大多都是将I/O处理放到其他线程中进行处理的，所以效率自然高，但是对于例如模板渲染，压缩，解压缩，加密，解密等CPU密集型计算的就得主线程去做了，这些都是需要串行执行的。如果需要提高效率，只能使得每个任务高效地完成，那么我们可以利用C++ Addon去处理CPU密集型，提高效率。</p>
 </section><footer class="footer-container"><div class="footer-body"><div class="copyright"><span>Copyright © 2018</span></div></div></footer></div></div>
 	<script src="https://f.alicdn.com/react/15.4.1/react-with-addons.min.js"></script>
 	<script src="https://f.alicdn.com/react/15.4.1/react-dom.min.js"></script>
