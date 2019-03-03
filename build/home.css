@@ -2067,8 +2067,8 @@ h1, h2, h3, h4, h5, h6 {
   .blog-list-page .top-section .pluto {
     height: 780px;
     width: 780px;
-    margin-top: -450px;
-    margin-left: -320px;
+    margin-top: -380px;
+    margin-left: -380px;
     -webkit-animation: orb 7439.7074054575s linear infinite;
     animation: orb 7439.7074054575s linear infinite; }
   .blog-list-page .top-section .pluto:before {
